@@ -5,18 +5,36 @@
         $stateProvider.state('mainPage',{
             url:'/',
             templateUrl: 'mainPage/mainPage.template.html'
-        }).state('customers',{
-            url:'/customers',
-            controller:'',
-            templateUrl:''
-        }).state('orders',{
-            url:'/orders',
-            controller:'',
-            templateUrl:''
-        }).state('customer.orders',{
-            url:'/customer/:custId/orders',
-            controller:'',
-            templateUrl:''
+        }).state('mainPage.customers',{
+            views:{
+                "mainPage":{
+                    url:'/customers',
+                    controller:'customersListController',
+                    templateUrl:'/CustomerManager/customersList/customersList.template.html'
+                },
+                "":{}
+            }
+
+        }).state('mainPage.orders',{
+            views:{
+                "mainPage":{
+                    url:'/orders',
+                    controller:'ordersListController',
+                    templateUrl:'/CustomerManager/ordersList/ordersList.template.html'
+                },
+                "":{}
+            }
+
+        }).state('mainPage.customers.orders',{
+            views:{
+                "mainPage":{
+                    url:'/:custId/orders',
+                    controller:'customerOrdersController',
+                    template:'/CustomerManager/customerOrders/customerOrders.template.html'
+                },
+                "":{}
+            }
+
         });
         $urlRouterProvider.otherwise('/');
     };

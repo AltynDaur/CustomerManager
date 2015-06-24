@@ -1,3 +1,3 @@
 (function (){
-    angular.module('mainPage',['customersList']);
+    angular.module('mainPage',['customersList','ordersList','customerOrders']);
 })();

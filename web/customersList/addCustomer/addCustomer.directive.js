@@ -5,8 +5,7 @@
         return {
             restrict:'E',
             templateUrl:'/CustomerManager/customersList/addCustomer/addCustomer.template.html',
-            controller:'addCustomerController',
-            controllerAs:'vm'
+            controller:'addCustomerController'
 
         };
     };
