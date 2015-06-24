@@ -2,8 +2,10 @@
     angular.module('addCustomer').controller('addCustomerController',addCustomerController);
 
     function addCustomerController ($scope){
-        $scope.addCustomer = function(){
-
+        function addCustomer(){
+            $scope.newCustomer.id = $scope.customers.length;
+            $scope.customers.push($scope.newCustomer);
         };
     };
+
 })();

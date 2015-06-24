@@ -2,16 +2,16 @@
     <form class="form-inline">
         <div class="form-group">
             <label>First Name</label>
-            <input type="text" class="form-control" placeholder="Enter first name">
+            <input type="text" class="form-control" placeholder="Enter first name" ng-model="newCustomer.firstName">
         </div>
         <div class="form-group">
             <label>Last Name</label>
-            <input type="text" class="form-control" placeholder="Enter last name">
+            <input type="text" class="form-control" placeholder="Enter last name" ng-model="newCustomer.lastName">
         </div>
         <div class="form-group">
             <label>City</label>
-            <input type="text" class="form-control" placeholder="Enter customer's city">
+            <input type="text" class="form-control" placeholder="Enter customer's city" ng-model="newCustomer.city">
         </div>
-        <button type="button" class="btn btn-primary" ng-click="addCustomer()">Add customer</button>
+        <button type="submit" class="btn btn-primary" ng-click="addCustomer()">Add customer</button>
     </form>
 </div>

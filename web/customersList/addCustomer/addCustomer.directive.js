@@ -4,8 +4,10 @@
     function addCustomerDirective(){
         return {
             restrict:'E',
+            templateUrl:'/CustomerManager/customersList/addCustomer/addCustomer.template.html',
             controller:'addCustomerController',
-            templateUrl:'/CustomerManager/customersList/addCustomer/addCustomer.template.html'
+            controllerAs:'vm'
+
         };
     };
 })();

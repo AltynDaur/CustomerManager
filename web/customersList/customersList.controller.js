@@ -4,7 +4,7 @@
     function CustomersListController($scope){
         $scope.customers = [
             {
-                'id':'1',
+                'id':'0',
                 'firstName':'John',
                 'lastName':'McLeine',
                 'city':'Karaganda',
